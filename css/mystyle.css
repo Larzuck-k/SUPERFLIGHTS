@@ -1,3 +1,10 @@
+.nolink{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 2rem;
+    }
+    
+
 .bg-body-quartiary{
 
 background-color: rgb(219, 219, 230)
@@ -12,7 +19,7 @@ background-color: rgb(219, 219, 230)
 
 .bg-body-secondary{
 
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(176, 177, 201)
     
     }
     .bg-body-tertiary{
