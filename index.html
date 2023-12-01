@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/mystyle.css" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="/css/bootstrap.css" />-->
+  
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand align-text-center" href="#">
+          <img src="/media/logo.png" alt="Logo" height="30" class="" />
+          SUPERFLIGHT
+        </a>
+
+        <!--
+         
+              <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        -->
+      </div>
+    </nav>
+
+    <div class="row container-fluid">
+      <div class="col-3 p-3 bg-body-secondary">
+        <div class="p-5 text-center">
+          <img
+            src="/media/Avion.jpg"
+            class="img-fluid rounded p-1 border border-2 img-fluid"
+            width="300"
+            alt="Vuelos"
+            srcset=""
+          />
+        </div>
+        Destino
+
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="destino"
+        >
+          <option selected>Seleccione su destino</option>
+          <option value="0">Cali - $90.000</option>
+          <option value="1">Cartago - $12000</option>
+          <option value="2">Cartagena - $85000</option>
+          <option value="3">Bogota - $150000</option>
+          <option value="4">Medellín - $135000</option>
+        </select>
+
+        <br />
+      </div>
+
+      <div class="col-3 p-3 bg-body-quartiary">
+        <p></p>
+
+        Cantidad de pasajeros
+
+        <input type="text" class="form-control" name="" id="pasajeros" />
+        <p></p>
+        Peso de maletas (kg) - si es más de 50kg aplica recargo de 15.000$ por cada kg
+
+        <input type="text"  class="form-control" name="" id="pesomaletas" />
+
+        <p></p>
+
+        Tipo de silla
+
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="tiposilla"
+        >
+          <option selected>Seleccione su tipo de silla</option>
+          <option value="0">Normal - $0</option>
+          <option value="1">Ejecutiva - $20.000</option>
+          <option value="2">VIP - $40.000</option>
+        </select>
+        <p></p>
+        <button id="liquidar" class="btn btn-primary px-5">
+          Liquitar tiquete
+        </button>
+        <p></p>
+        <div class="p-5 text-center">
+          <img
+            src="/media/tiquet.png"
+            class="img-fluid  p-2 "
+            width="350"
+            alt="Vuelos"
+            srcset=""
+          />
+        </div>
+
+        <div id="liquidacion" class="p-3 text-center">
+          
+
+        </div>
+      </div>
+
+      <div class="col-6 bg-body-secondary">
+        <span class="display-5">Prueba tu suerte</span>
+        <div class="text-center p-5">
+          <img
+            src="/media/Casino.png"
+            class="img-fluid rounded p-1 border border-2 img-fluid"
+            width=""
+            alt="Vuelos"
+            srcset=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+        <span class="text-muted">Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <!-- <script src="/js/bootstrap.js"></script> -->
+  
+    <script src="/js/liquidacion.js"></script>
+  </body>
+</html>
